@@ -59,21 +59,21 @@ def inv_transform_y2z(z_list: list):
     return y_list
     
 if __name__ == "__main__":
-    x = str(input("N, method:\n"))
+    x = str(input())
     N, method = x.split(" ")
     N = int(N)
     input_seq = [int(input()) for e in range(N)]
   
     if method == '1':
         output = inv_transform_x2y(N, input_seq)
-        print("\n\nOutput:")
+        # print("\n\nOutput:")
         for e in output:
             print(e)
     
     else:
         y_list = inv_transform_y2z(input_seq)
         output = inv_transform_x2y(N, y_list)
-        print("\n\nOutput:")
+        # print("\n\nOutput:")
         for e in output:
             print(e)
-  
+            
